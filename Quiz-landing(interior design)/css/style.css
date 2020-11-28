@@ -1,0 +1,15 @@
+body {
+	background-color: #f5f6f7;
+}
+.phone {
+	color: #2e353d;
+	font-weight: 700;
+	font-style: 18px;
+}
+.main-image {
+	border-radius: 10px;
+	box-shadow: 10px 10px 25px rgba(14, 13, 13, 0.4);
+}
+.main-navbar {
+	margin-bottom: 96px;
+}
