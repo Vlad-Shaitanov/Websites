@@ -1,0 +1,46 @@
+*,
+*:before,
+*:after{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+}
+
+img{
+	display: block;
+	max-width: 100%;
+}
+
+ul{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+.container{
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+.header-container{
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav__list{
+	display: flex;
+	align-items: center;
+}
+
+.nav__item:not(:last-child){
+	margin-right: 30px;
+}
