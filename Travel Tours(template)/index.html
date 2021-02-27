@@ -1,53 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="style.css">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-	<title>Travel Tours</title>
-</head>
-<body>
-	
-	<svg class="circle-anim" viewBox="-10 -10 300 300">
-		<circle class="progress" r="140" cx="140" cy="140" fill="none" stroke="#7FFF00" stroke-width="20"></circle>
-	</svg>
-	<div class="progress__line">
-		<div class="progress__line-item"></div>
-	</div>
-	<header class="header">
-		<div class="container header-container">
-			<a href="#" class="logo">Логотип</a>
-			<nav class="nav">
-				<ul class="nav__list">
-					<li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
-					<li class="nav__item"><a href="#" class="nav__link">Услуги</a></li>
-					<li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
-					<li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
-
-				</ul>
-			</nav>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+		<title>Travel Tours</title>
+	</head>
+	<body>
+		
+		<svg class="circle-anim" viewBox="-10 -10 300 300">
+			<circle class="progress" r="140" cx="140" cy="140" fill="none" stroke="#7FFF00" stroke-width="20"></circle>
+		</svg>
+		<div class="progress__line">
+			<div class="progress__line-item"></div>
 		</div>
-	</header>
-	<main class="main">
-		<section class="top">
-			<div class="container top-container">
-				<div class="top__text">
-					<h1 class="top-title">Главный заголовок сайта</h1>
-					<p class="top-descr">
-						Краткая информация о компании
-					</p>
-				</div>
+		<header class="header">
+			<div class="container header-container">
+				<a href="#" class="logo">Логотип</a>
+				<nav class="nav">
+					<ul class="nav__list">
+						<li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
+						<li class="nav__item"><a href="#" class="nav__link">Услуги</a></li>
+						<li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
+						<li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+					</ul>
+				</nav>
 			</div>
-		</section><section class="services">
+		</header>
+		<main class="main">
+			<section class="top">
+				<div class="container top-container">
+					<div class="top__text">
+						<h1 class="top-title">Главный заголовок сайта</h1>
+						<p class="top-descr">
+							Краткая информация о компании
+						</p>
+					</div>
+				</div>
+			</section>
+			<section class="services">
 			<div class="container">
-				<h2 class="title">Услуги</h2>
+				<h2 class="services__title">Услуги</h2>
 				<ul class="services__list">
-					<li class="services__item scroll-item">Услуга 1</li>
-					<li class="services__item scroll-item">Услуга 2</li>
-					<li class="services__item scroll-item">Услуга 3</li>
-					<li class="services__item scroll-item">Услуга 4</li>
+					<li class="services__item scroll-item"><p>Услуга 1</p></li>
+					<li class="services__item scroll-item"><p>Услуга 2</p></li>
+					<li class="services__item scroll-item"><p>Услуга 3</p></li>
+					<li class="services__item scroll-item"><p>Услуга 4</p></li>
 				</ul>
 			</div>
 		</section>
@@ -64,14 +64,15 @@
 				<h2 class="title">Контакты</h2>
 				<div class="contacts__content">
 					<div class="contacts__left contacts__item scroll-item">
-						<form action="" class="form">
+						<form action="#" class="form">
 							<input type="text" placeholder="Имя">
 							<input type="tel" placeholder="Телефон">
 							<button>Отправить</button>
 						</form>
 					</div>
 					<div class="contacts__right contacts__item scroll-item">
-						<a href="tel:2342342" class="phone">+70123456789</a>
+						<p>Телефон для связи:</p>
+						<a href="tel:+70123456789" class="phone">+70123456789</a>
 					</div>
 				</div>
 			</div>
@@ -80,11 +81,10 @@
 	<footer class="footer">
 		<div class="container">
 			<small class="rights">
-				All rights reserved (2021)
+			&copy All rights reserved (2021)
 			</small>
 		</div>
 	</footer>
-
 	<script src="main.js"></script>
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>

@@ -31,6 +31,8 @@ a{
 	margin: 0 auto;
 }
 
+
+/*===== HEADER =====*/
 .header-container{
 	display: flex;
 	justify-content: space-between;
@@ -43,4 +45,108 @@ a{
 
 .nav__item:not(:last-child){
 	margin-right: 30px;
+}
+
+.header{
+	padding: 40px 0;
+	background-color: #000;
+}
+
+.nav__link,
+.logo {
+	font-size: 20px;
+	color: #fff;
+}
+
+.nav__link:hover,
+.logo:hover{
+	color: #7FFF00;
+}
+
+
+
+/*===== MAIN =====*/
+
+.top-container{
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.top{
+	height: 800px;
+	background: url("bg.jpg") center center no-repeat;
+	background-size: cover;
+}
+
+.top-title{
+	margin: 0;
+	margin-bottom: 30px;
+	font-size: 50px;
+	color: #fff;
+}
+
+.top-descr{
+	margin: 0;
+	font-size: 30px;
+	color: #fff;
+}
+
+.services{
+	padding: 100px 0;
+}
+
+.services__title{
+	font-size: 30px;
+	margin-bottom: 15px;
+}
+
+.services__list {
+	width: 100%;
+	display: grid;
+	gap: 20px;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.services__item{
+	min-height: 300px;
+	border: 1px solid #000;
+}
+
+.services__item p{
+	font-size: 20px;
+	text-align: center;
+	padding-top: 10px;
+}
+
+.title {
+	margin: 0;
+	margin-bottom: 30px;
+	font-size: 30px;
+}
+
+.text {
+	padding: 100px 0;
+	background-color: #fff;
+}
+
+.contacts {
+	padding: 250px 0;
+	background-color: #fff;
+}
+
+.contacts__content {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px;
+}
+
+
+/*===== FOOTER =====*/
+
+.footer{
+	padding: 70px 0;
+	background-color: #000;
+	color: #fff;
+	text-align: center;
 }
