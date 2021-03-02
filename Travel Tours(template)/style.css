@@ -254,6 +254,10 @@ a
     opacity: 0;
 }
 
+.text-item:not(:last-child){
+    margin-bottom: 15px;
+}
+
 .text-item.animation-class
 {
     -webkit-transition: opacity .3s ease-in-out, -webkit-transform .3s ease-in-out;
