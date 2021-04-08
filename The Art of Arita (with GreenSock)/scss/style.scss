@@ -66,7 +66,8 @@ ul {
 	top: 0;
 	z-index: 10000;
 	overflow: hidden;
-	display: flex;
+	// display: flex;
+	display: none;
 	align-items: center;
 	justify-content: center;
 	width: 100%;
@@ -121,15 +122,118 @@ ul {
 	z-index: -1;
 	transform: translate(-50%, -50%);
 	background-color: #fff;
+	&::before {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 0;
+		height: 100%;
+		background-color: #fff;
+		transition: width 0.7s cubic-bezier(0.77, 0.125, 0.265, 1.04);
+	}
 }
 
-.preloader__background::before {
-	content: "";
+/* PRELOADER ANIMATION*/
+
+.mouse {
+	display: none;
+}
+
+.container {
+	width: 100%;
+	max-width: 1320px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.header {
 	position: absolute;
 	left: 0;
 	top: 0;
-	width: 0;
-	height: 100%;
-	background-color: #fff;
-	transition: width 0.7s cubic-bezier(0.77, 0.125, 0.265, 1.04);
+	width: 100%;
+	z-index: 20;
+	min-width: 320px;
+	padding: 30px 0;
+	// opacity: 0;
+	transform: translateY(100px);
+}
+
+.header__container {
+	display: flex;
+	align-items: center;
+}
+
+.logo {
+	display: inline-flex;
+	align-items: center;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.logo__letter {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #000;
+	border-radius: 100%;
+	width: 37px;
+	height: 37px;
+	margin-right: 10px;
+}
+
+.nav__list {
+	display: flex;
+	align-items: center;
+}
+
+.nav__item {
+	&:not(:last-child) {
+		margin-right: 63px;
+	}
+}
+
+.nav__link {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.header__burger {
+	margin-left: auto;
+}
+
+.burger {
+	position: relative;
+	width: 60px;
+	height: 9px;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+	background-color: transparent;
+
+	&:before,
+	&::after {
+		content: "";
+		position: absolute;
+		left: 0;
+		width: 100%;
+		height: 2px;
+		background-color: #000;
+	}
+
+	&::before {
+		top: 0;
+	}
+
+	&::after {
+		bottom: 0;
+	}
+}
+
+.header__nav {
+	margin-left: 15%;
+}
+
+.main__wrapper {
+	padding-top: 300px;
 }
