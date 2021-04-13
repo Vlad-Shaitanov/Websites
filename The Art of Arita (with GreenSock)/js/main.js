@@ -2,10 +2,12 @@
 
 const init = () => {
 	const showNextSlide = () => {
+		bgSlides("down");
 		console.log("next");
 	};
 
 	const showPrevSlide = () => {
+		bgSlides("up");
 		console.log("prev");
 	};
 
