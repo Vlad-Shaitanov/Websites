@@ -1,6 +1,28 @@
 "use strict";
 
 const init = () => {
+
+	window.onload = function () {
+		//Обработка стартовой анимации
+		const preloader = document.querySelector(".preloader");
+
+		preloader.classList.add("preloader-animation");
+
+		setTimeout(() => {
+			preloader.classList.remove("preloader-animation");
+
+			//Скрываем прелодер
+			preloader.classList.add("preloader-hidden");
+		}, 3000);
+
+		setTimeout(() => {
+			startAnimation();
+
+			//Убираем прелодер
+			preloader.classList.add("preloader-none");
+		}, 3200);
+	};
+
 	const showNextSlide = () => {
 		bgSlides("down");
 		console.log("next");

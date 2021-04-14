@@ -71,8 +71,8 @@ ul {
 	top: 0;
 	z-index: 10000;
 	overflow: hidden;
-	// display: flex;
-	display: none;
+	display: flex;
+	//display: none;
 	align-items: center;
 	justify-content: center;
 	width: 100%;
@@ -87,7 +87,7 @@ ul {
 	font-size: 360px;
 	line-height: 453px;
 	color: #fff;
-	// opacity: 0;
+	opacity: 0;
 	transform: translateX(7%);
 	transition: opacity 0.3s ease-in-out;
 	animation: preloader 20s linear;
@@ -113,7 +113,7 @@ ul {
 	font-size: 72px;
 	line-height: 91px;
 	transform: translate(-50%, -20%);
-	// opacity: 0;
+	opacity: 0;
 	transition: opacity 0.3s cubic-bezier(0.77, 0.125, 0.265, 1.04),
 		transform 0.3s cubic-bezier(0.77, 0.125, 0.265, 1.04);
 }
@@ -126,7 +126,7 @@ ul {
 	height: 220px;
 	z-index: -1;
 	transform: translate(-50%, -50%);
-	background-color: #fff;
+
 	&::before {
 		content: "";
 		position: absolute;
@@ -139,7 +139,50 @@ ul {
 	}
 }
 
-/* PRELOADER ANIMATION*/
+.preloader-animation {
+	& .preloader__back {
+		opacity: 0.15;
+	}
+
+	& .preloader__forward {
+		opacity: 1;
+		transform: translate(-50%, -50%);
+	}
+
+	& .preloader__background {
+		&::before {
+			transition-delay: 0.5s;
+			width: 330px;
+		}
+	}
+}
+
+.preloader-hidden {
+	& .preloader__back {
+		opacity: 0;
+		transition: opacity 0.3s cubic-bezier(0.77, 0.125, 0.265, 1.04),
+			transform 0.3s cubic-bezier(0.77, 0.125, 0.265, 1.04);
+	}
+
+	& .preloader__background {
+		&::before {
+			width: 0;
+		}
+	}
+
+	& .preloader__forward {
+		opacity: 0;
+		transition-delay: 0.5s;
+		transform: translate(-50%, -50%);
+		transition: opacity 0.3s ease-in-out;
+	}
+}
+
+.preloader-none {
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
 
 .mouse {
 	position: fixed;
@@ -232,13 +275,13 @@ ul {
 .header {
 	position: absolute;
 	left: 0;
-	//top: 0;
-	top: -14%;
+	top: 0;
+	//top: -14%;
 	width: 100%;
 	z-index: 20;
 	min-width: 320px;
 	padding: 30px 0;
-	// opacity: 0;
+	opacity: 0;
 	transform: translateY(100px);
 }
 
@@ -335,8 +378,8 @@ ul {
 	&__explore {
 		letter-spacing: 1px;
 		text-transform: uppercase;
-		// opacity: 0;
-		// transform: translateY(100px);
+		opacity: 0;
+		transform: translateY(100px);
 	}
 }
 
@@ -404,8 +447,8 @@ ul {
 	font-size: 112px;
 	line-height: 130px;
 	color: #fff;
-	// opacity: 0;
-	// transform: translateY(100px);
+	opacity: 0;
+	transform: translateY(100px);
 
 	&--dark {
 		color: #000;
@@ -414,8 +457,8 @@ ul {
 
 .designers-info {
 	display: flex;
-	// opacity: 0;
-	// transform: translateY(100px);
+	opacity: 0;
+	transform: translateY(100px);
 
 	&__descr {
 		margin-left: 30px;
