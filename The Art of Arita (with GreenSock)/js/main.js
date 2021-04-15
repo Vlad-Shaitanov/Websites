@@ -27,6 +27,7 @@ const init = () => {
 		bgSlides("down");
 		imagesSlides("down");
 		shapesSlides("down");
+		textSlides("down");
 		console.log("next");
 	};
 
@@ -34,6 +35,7 @@ const init = () => {
 		bgSlides("up");
 		imagesSlides("up");
 		shapesSlides("up");
+		textSlides("up");
 		console.log("prev");
 	};
 

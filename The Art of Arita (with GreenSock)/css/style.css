@@ -536,7 +536,6 @@ ul {
   top: -webkit-calc(67px + 50px);
   top: calc(67px + 50px);
   pointer-events: none;
-  opacity: 0;
 }
 
 .slides-container__slide--active {

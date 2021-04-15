@@ -424,7 +424,7 @@ ul {
 	left: 0;
 	top: calc(67px + 50px);
 	pointer-events: none;
-	opacity: 0;
+	//opacity: 0;
 
 	&--active {
 		pointer-events: auto;
