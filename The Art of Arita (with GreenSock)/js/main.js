@@ -26,12 +26,14 @@ const init = () => {
 	const showNextSlide = () => {
 		bgSlides("down");
 		imagesSlides("down");
+		shapesSlides("down");
 		console.log("next");
 	};
 
 	const showPrevSlide = () => {
 		bgSlides("up");
 		imagesSlides("up");
+		shapesSlides("up");
 		console.log("prev");
 	};
 
